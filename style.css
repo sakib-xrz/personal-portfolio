@@ -422,10 +422,9 @@ p {
 /* About Section */
 #about .about {
 	flex-direction: column-reverse;
-	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 70px 20px;
 }
 #about .col-left {
 	width: 250px;
@@ -435,16 +434,20 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
+	font-size: 2.3rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
+#about .abt-info{
+	display: flex;
+}
 #about .col-right p {
 	margin-bottom: 20px;
+	font-size: 1.7rem;
 }
 #about .col-right .cta {
-	color: black;
+	color: #000;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
@@ -465,7 +468,135 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
+#about .col-right .cta:hover{
+	color: #fff;
+}
 /* End About Section */
+
+/* Skill Section  */
+#skill{
+	margin-bottom: 100px;
+}
+#skill-title{
+	margin-bottom: 50px;
+}
+.skill-bars {
+    padding: 25px 25px;
+    width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+.skill-bars .bar{
+	margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+	margin-top: 0px;
+}
+.skill-bars .bar .info{
+	margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+	font-weight: 500;
+	font-size: 17px;
+	opacity: 0;
+	animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+100%{
+	opacity: 1;
+}
+}
+.skill-bars .bar .progress-line{
+	height: 10px;
+	width: 100%;
+	background: #f0f0f0;
+	position: relative;
+	transform: scaleX(0);
+	transform-origin: left;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+				0 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+100%{
+	transform: scaleX(1);
+}
+}
+.bar .progress-line span{
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: #DC143C;
+	animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+	width: 90%;
+}
+.bar .progress-line.css span{
+	width: 55%;
+}
+.bar .progress-line.jquery span{
+	width: 85%;
+}
+.bar .progress-line.python span{
+	width: 65%;
+}
+.bar .progress-line.mysql span{
+	width: 75%;
+}
+.progress-line span::before{
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: #000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+	position: absolute;
+	top: -28px;
+	right: 0;
+	font-weight: 500;
+	background: #000;
+	color: #fff;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+	}
+	@keyframes showText2 {
+	100%{
+		opacity: 1;
+	}
+}
+.progress-line.html span::after{
+	content: "90%";
+}
+.progress-line.css span::after{
+	content: "55%";
+}
+.progress-line.jquery span::after{
+	content: "85%";
+}
+.progress-line.python span::after{
+	content: "65%";
+}
+.progress-line.mysql span::after{
+	content: "75%";
+}
+/* End Skill Section */
 
 /* contact Section */
 #contact .contact {
@@ -598,6 +729,19 @@ p {
     #services .service-item h2 {
         font-size: 1.7rem;
     }
+	#about .col-right h2{
+		text-align: center;
+	}
+	#about .col-right .cta{
+		text-align: center;
+	}
+	#skill-button a{
+		display: flex;
+		justify-content: center;
+	}
+	#skill .skill-bars {
+		width: 90%;
+	}
 }
 
 /* Media Query For Tablet */
