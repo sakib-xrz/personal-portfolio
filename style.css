@@ -540,13 +540,13 @@ p {
 .bar .progress-line.css span{
 	width: 55%;
 }
-.bar .progress-line.jquery span{
+.bar .progress-line.bootstrap span{
 	width: 85%;
 }
-.bar .progress-line.python span{
+.bar .progress-line.javascript span{
 	width: 65%;
 }
-.bar .progress-line.mysql span{
+.bar .progress-line.photoshop span{
 	width: 75%;
 }
 .progress-line span::before{
@@ -587,13 +587,13 @@ p {
 .progress-line.css span::after{
 	content: "55%";
 }
-.progress-line.jquery span::after{
+.progress-line.bootstrap span::after{
 	content: "85%";
 }
-.progress-line.python span::after{
+.progress-line.javascript span::after{
 	content: "65%";
 }
-.progress-line.mysql span::after{
+.progress-line.photoshop span::after{
 	content: "75%";
 }
 /* End Skill Section */
