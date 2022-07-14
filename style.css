@@ -659,16 +659,8 @@ p {
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 10px;
-}
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 #footer .social-icon {
 	display: flex;
@@ -759,6 +751,9 @@ p {
 	}
 	#contact .section-title{
 		margin-bottom: 10px;
+	}
+	#footer .footer {
+		padding-top: 20px;
 	}
 }
 
