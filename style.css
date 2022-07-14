@@ -474,9 +474,6 @@ p {
 /* End About Section */
 
 /* Skill Section  */
-#skill{
-	margin-bottom: 100px;
-}
 #skill-title{
 	margin-bottom: 50px;
 }
@@ -599,6 +596,12 @@ p {
 /* End Skill Section */
 
 /* contact Section */
+#contact .container{
+	min-height: auto;
+}
+#contact .section-title{
+	margin-bottom: 50px;
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -606,7 +609,7 @@ p {
 	width: 90%;
 }
 #contact .contact-items {
-	/* max-width: 400px; */
+	margin-top: 50px;
 	width: 100%;
 }
 #contact .contact-item {
@@ -640,6 +643,12 @@ p {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
+}
+#contact .contact-info a {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+	color: #DC143C;
 }
 /*End contact Section */
 
@@ -741,6 +750,15 @@ p {
 	}
 	#skill .skill-bars {
 		width: 90%;
+	}
+	#contact{
+		margin-top: 100px;
+	}
+	#contact .contact-items {
+		margin-top: 0px;
+	}
+	#contact .section-title{
+		margin-bottom: 10px;
 	}
 }
 
